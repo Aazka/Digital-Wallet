@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Goals"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/heading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/what_are_you_saving_for"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/heading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="11dp"
+        android:gravity="center"
+        android:text="@string/some_things_people_save_for"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="@+id/Creat_goal_button"
+        app:layout_constraintTop_toBottomOf="@+id/Creat_goal_button"
+        tools:textColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/carimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="213dp"
+        android:layout_marginBottom="213dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heading1"
+        app:srcCompat="@drawable/vehical" />
+
+    <Button
+        android:id="@+id/Vehical_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="15dp"
+        android:onClick="OnClickVehical"
+        android:text="@string/vehical_btn"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="@+id/carimage"
+        app:layout_constraintTop_toBottomOf="@+id/carimage" />
+
+    <ImageView
+        android:id="@+id/Educationimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/Education_button"
+        app:layout_constraintStart_toStartOf="@+id/Education_button"
+        app:srcCompat="@drawable/education" />
+
+    <Button
+        android:id="@+id/Education_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="14dp"
+        android:onClick="OnClickEducation"
+        android:text="@string/education_btn"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/charityimage"
+        app:layout_constraintStart_toEndOf="@+id/charityimage" />
+
+    <Button
+        android:id="@+id/Charity_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="OnClickCharity"
+        android:text="@string/charity_btn"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/charityimage" />
+
+    <TextView
+        android:id="@+id/heading3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:gravity="center"
+        android:text="@string/name_text"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/Goal_text"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/Goal_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/your_goal_name"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heading3"
+        tools:textColor="@android:color/black"
+        tools:textColorHint="@android:color/black" />
+
+    <Button
+        android:id="@+id/Creat_goal_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="239dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="69dp"
+        android:onClick="OnClickCreateGoal"
+        android:text="@string/create_goal_btn"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/Educationimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heading3" />
+
+    <ImageView
+        android:id="@+id/charityimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toEndOf="@+id/Vehical_button"
+        app:layout_constraintTop_toBottomOf="@+id/Vehical_button"
+        app:srcCompat="@drawable/charity" />
+
+</android.support.constraint.ConstraintLayout>
